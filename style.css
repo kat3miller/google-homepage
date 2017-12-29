@@ -1,0 +1,113 @@
+div {
+	display: block;
+}
+
+body, html {
+	font-size: small;
+}
+
+body {
+	background: #fff;
+	color: #222;
+}
+
+body, a, p {
+	font-family: arial, sans-serif;
+}
+
+a:visited {
+	color: #609;
+}
+
+a {
+	color: #1a0dab;
+	text-decoration: none;
+}
+
+#nav {
+	display: inline-block;
+	font-size: 13px;
+	right: 0;
+	width: 100%;
+	opacity: 0.75;
+	margin-top: 7px;
+}
+
+#nav a {
+	color: #000;
+	padding-left: 15px;
+	line-height: 24px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#lnav {
+	opacity: 0.75;
+	text-align: left;
+	position: absolute;
+	margin-left: 10px;
+}
+
+#setOpacity {
+	opacity: 0.75;
+}
+
+#rnav #gApps {
+	line-height: 24px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#rnav {
+	align-items: center;
+	display: flex;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	float: right;
+	justify-content: flex-end;
+	min-width: 220px;
+	position: relative;
+	padding-right: 15px;
+	text-align: right;
+	user-select: none;
+	white-space: nowrap;
+	order: 1;
+	z-index: 987;
+}
+
+a:-webkit-any-link {
+	cursor: pointer;
+}
+
+#nav #signIn {
+	color: #fff;
+	text-align: left;
+}
+
+#signIn {
+	text-decoration: none;
+	background: #4285f4;
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	border-radius: 2px;
+}
+
+#centerSpace {
+	padding-top: 109px;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.searchArea {
+	display: block;
+	margin: -1px 0 0;
+	padding-left: 173px;
+	padding-right: 173px;
+	padding-top: 8px;
+	position: relative;
+}
