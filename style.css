@@ -22,8 +22,13 @@ body, a, p {
 	font-family: arial, sans-serif;
 }
 
-a:visited {
-	color: #609;
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:link {
+	color: #000;
 }
 
 a {
@@ -36,7 +41,11 @@ a {
 	font-size: 13px;
 	right: 0;
 	width: 100%;
-	margin-top: 19px;
+	margin-top: 16px;
+}
+
+#lnav {
+	padding-top: 3px;
 }
 
 #nav a {
@@ -45,6 +54,10 @@ a {
 	line-height: 24px;
 	vertical-align: middle;
 	white-space: nowrap;
+}
+
+#fr a, #fl a{
+	padding-left: 22px;
 }
 
 #lnav, #fl {
@@ -86,6 +99,7 @@ a:-webkit-any-link {
 	line-height: 24px;
 	vertical-align: middle;
 	white-space: nowrap;
+	opacity: 0.75;
 }
 
 #nav #signIn {
@@ -101,6 +115,10 @@ a:-webkit-any-link {
 	font-weight: bold;
 	outline: none;
 	border-radius: 2px;
+	margin-left: 21px;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 #centerSpace {
@@ -121,7 +139,7 @@ a:-webkit-any-link {
 	text-align: center;
 }
 
-.fbar {
+.footer {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -130,4 +148,8 @@ a:-webkit-any-link {
 	border-top: 1px solid #e4e4e4;
 	line-height: 40px;
 	min-width: 980px;
+}
+
+.footer a {
+	opacity: 0.75;
 }
