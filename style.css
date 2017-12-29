@@ -163,6 +163,28 @@ input[type=text] {
 	border: 0;
 }
 
+input[type=submit] {
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	color: #757575;
+	font-weight: bold;
+	margin: 11px 4px;
+	min-width: 54px;
+	padding: 0 16px;
+	text-align: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	white-space: pre;
+	height: 36px;
+}
+
+input[type=submit]:hover {
+	border: 1px solid #c6c6c6;
+	background-color: #f8f8f8;
+	color: #222;
+}
+
 
 /* Removes orange outline on Chrome when selected */
 textarea:focus, input:focus {
@@ -195,5 +217,5 @@ textarea:focus, input:focus {
 }
 
 .sButtons {
-	margin-top: 30px;
+	margin-top: 25px;
 }
