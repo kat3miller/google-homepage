@@ -110,8 +110,7 @@ a:-webkit-any-link {
 #signIn {
 	text-decoration: none;
 	background: #4285f4;
-	background: -webkit-linear-gradient(top, #4387fd, #4683ea);
-	border: 1px solid #4285f4;
+	border: 1px solid;
 	font-weight: bold;
 	outline: none;
 	border-radius: 2px;
@@ -165,7 +164,7 @@ input[type=text] {
 
 input[type=submit] {
 	background-color: #f2f2f2;
-	border: 1px solid #f2f2f2;
+	border: 1px solid;
 	border-radius: 2px;
 	color: #757575;
 	font-weight: bold;
@@ -236,7 +235,7 @@ textarea:focus, input:focus {
 	text-align: center;
 	font-weight: bold;
 	font-size: 11px;
-	padding; 5px 0;
+	padding: 5px 0;
 	padding-top: 8px;
 	position: absolute;
 	border-radius: 1px;
