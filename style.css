@@ -2,23 +2,18 @@ div {
 	display: block;
 }
 
-body, html {
-	font-size: small;
-}
-
-html {
-	min-height: 100%;
-}
-
 body {
 	background: #fff;
 	color: #222;
+	font-size: small;
+	margin: 0 auto;
 	min-height: 100%;
 	min-width: 980px;
-	margin: 0 auto;
 }
 
-body, a, p {
+body, 
+a, 
+p {
 	font-family: arial, sans-serif;
 }
 
@@ -33,41 +28,51 @@ a:link {
 
 a {
 	color: #000;
+	cursor: pointer;
 	text-decoration: none;
 }
 
 #nav {
 	display: block;
 	font-size: 13px;
+	margin-top: 16px;
 	right: 0;
 	width: 100%;
-	margin-top: 16px;
-}
-
-#lnav {
-	padding-top: 3px;
 }
 
 #nav a {
 	color: #000;
-	padding-left: 15px;
 	line-height: 24px;
+	padding-left: 15px;
 	vertical-align: middle;
 	white-space: nowrap;
 }
 
-#fr a, #fl a{
+#left-nav {
+	padding-top: 3px;
+}
+
+#right-nav {
+	opacity: .75;
+}
+
+
+
+#right-footer a, 
+#left-footer a{
 	padding-left: 22px;
 }
 
-#lnav, #fl {
-	opacity: 0.75;
-	text-align: left;
-	position: absolute;
+#left-nav, 
+#left-footer {
 	margin-left: 10px;
+	opacity: .75;
+	position: absolute;
+	text-align: left;
 }
 
-#rnav, #fr {
+#right-nav, 
+#right-footer {
 	align-items: center;
 	display: flex;
 	flex-basis: auto;
@@ -76,52 +81,40 @@ a {
 	float: right;
 	justify-content: flex-end;
 	min-width: 220px;
+	order: 1;
 	position: relative;
-	padding-right: 30px;
-	padding-left: 30px;
+	padding: 0 30px;
 	text-align: right;
 	user-select: none;
 	white-space: nowrap;
-	order: 1;
 	z-index: 987;
 }
 
-
-a:-webkit-any-link {
-	cursor: pointer;
-}
-
-#setOpacity {
-	opacity: 0.75;
-}
-
-#rnav #gApps {
+#right-nav #google-apps {
 	line-height: 24px;
+	opacity: .75;
 	vertical-align: middle;
 	white-space: nowrap;
-	opacity: 0.75;
 }
 
-#nav #signIn {
+#nav #sign-in {
 	color: #fff;
 	text-align: left;
 }
 
-#signIn {
-	text-decoration: none;
+#sign-in {
 	background: #4285f4;
 	border: 1px solid;
-	font-weight: bold;
-	outline: none;
 	border-radius: 2px;
-	margin-left: 21px;
-	padding-right: 12px;
-	padding-top: 2px;
-	padding-bottom: 2px;
 	cursor: default;
+	font-weight: bold;
+	margin-left: 21px;
+	outline: none;
+	padding: 2px 12px 2px 0;
+	text-decoration: none;
 }
 
-#centerSpace {
+#center-space {
 	padding-top: 179px;
 }
 
@@ -130,24 +123,21 @@ a:-webkit-any-link {
 	margin: 0 auto;
 }
 
-.searchArea {
+.search-area {
 	display: block;
 	margin: 0 auto;
-	padding-left: 173px;
-	padding-right: 173px;
-	padding-top: 25px;
+	padding: 25px 173px 0 173px;
 	text-align: center;
 }
 
 .footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
+	bottom: 0;
 	line-height: 40px;
 	min-width: 980px;
+	position: absolute;
+	width: 100%;
 }
 
 .footer a {
@@ -155,97 +145,88 @@ a:-webkit-any-link {
 }
 
 input[type=text] {
-	width: 403px;
-	height: 30px; 
-	margin-right: 25px;
-	margin-top: 4px;
 	border: 0;
+	height: 30px; 
+	margin: 4px 25px 0 0;
+	width: 403px;
 }
 
 input[type=submit] {
+	align-items: flex-start;
 	background-color: #f2f2f2;
-	border: 1px solid;
+	border: 1px solid #f2f2f2;
 	border-radius: 2px;
+	box-sizing: border-box;
 	color: #757575;
 	font-weight: bold;
+	height: 36px;
 	margin: 11px 4px;
 	min-width: 54px;
 	padding: 0 16px;
 	text-align: center;
-	align-items: flex-start;
-	box-sizing: border-box;
 	white-space: pre;
-	height: 36px;
 }
 
 input[type=submit]:hover {
-	border: 1px solid #c6c6c6;
 	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
 	color: #222;
 }
 
-
-/* Removes orange outline on Chrome when selected */
-textarea:focus, input:focus {
-	outline: none;
-}
-
+/* Removes orange outline when selected */
 *:focus {
 	outline: none;
 }
 
-#vIcon {
+#voice-icon {
 	margin-right:10px;
 	vertical-align: middle;
 }
 
-#searchBar {
-	margin: 0 auto;
-	width: 485px;
-	height: 44px;
+#search-bar {
 	border: 0.1px solid gray;
 	border-radius: 2px;
-	box-shadow: 0px 2px 2px rgba(0,0,0,0.16),
+	box-shadow: 0 2px 2px rgba(0,0,0,0.16),
 	0 0 0 1px rgba(0,0,0,0.08);
+	height: 44px;
+	margin: 0 auto;
+	width: 485px;
 }
 
-/* Not working, need to fix */
-#searchBar:hover {
+#search-bar:hover {
 	box-shadow: 0 3px 8px rgba(0,0,0,0.2),
 	0 0 0 1px rgba(0,0,0,0.08);
 }
 
-.sButtons {
+.search-buttons {
 	margin-top: 25px;
 }
 
 .tooltip {
-	position: relative;
-	height: 20px;
-	width: 20px;
 	display: inline-block;
+	height: 20px;
+	position: relative;
+	width: 20px;
 }
 
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 100px;
+.tooltip .tooltip-text {
 	background-color: black;
-	color: #fff;
-	opacity: 0.75;
-	text-align: center;
-	font-weight: bold;
-	font-size: 11px;
-	padding: 5px 0;
-	padding-top: 8px;
-	position: absolute;
 	border-radius: 1px;
-	z-index: 1;
-	height: 19px;
-	top: 190%;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
 	left: 50%;
 	margin-left: -50px;
+	opacity: .75;
+	padding: 8px 0;
+	position: absolute;
+	top: 190%;
+	text-align: center;
+	visibility: hidden;
+	width: 100px;
+	z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltip-text {
 	visibility: visible;
 }
