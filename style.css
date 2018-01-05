@@ -52,7 +52,7 @@ a {
 	padding-top: 3px;
 }
 
-#right-nav {
+.r-nav-word {
 	opacity: .75;
 }
 
@@ -92,14 +92,16 @@ a {
 
 #right-nav #google-apps {
 	line-height: 24px;
-	opacity: .75;
+	opacity: .5;
 	vertical-align: middle;
 	white-space: nowrap;
+	padding-left: 5px;
 }
 
 #nav #sign-in {
 	color: #fff;
 	text-align: left;
+	padding-left: 12px;
 }
 
 #sign-in {
